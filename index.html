@@ -130,28 +130,12 @@
       flex-direction: column;
       gap: 2px;
     }
-    .verify-btn {
-      padding: 6px 10px;
-      border-radius: 999px;
-      border: none;
-      font-size: 11px;
-      font-weight: 600;
-      background: #0ea5e9;
-      color: white;
-      cursor: default;
-    }
-    .qr-placeholder {
+    .qr-img {
       width: 56px;
       height: 56px;
       border-radius: 10px;
-      border: 1px dashed #d1d5db;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 9px;
-      text-align: center;
-      padding: 4px;
-      color: #9ca3af;
+      object-fit: cover;
+      border: 1px solid #d1d5db;
     }
     @media (max-width: 480px) {
       .card-body {
@@ -164,6 +148,7 @@
   </style>
 </head>
 <body>
+
   <div class="card">
     <div class="card-header">
       <div class="logo-circle">Tec</div>
@@ -175,10 +160,10 @@
 
     <div class="card-body">
       <div class="photo-wrapper">
-        <!-- Reemplaza la URL de abajo por la foto de Lucia dentro de tu repo -->
-        <!-- Ejemplo: src="lucia.jpg" si subes el archivo lucia.jpg -->
-        <img src="https://via.placeholder.com/300x400?text=Foto+Lucia" alt="Foto de Lucia">
+        <!-- Foto real de Lucia -->
+        <img src="Lucia.jpg" alt="Foto de Lucia">
       </div>
+
       <div class="info">
         <div class="info-row">
           <span class="label">Nombre</span>
@@ -212,10 +197,12 @@
         <span>ID verificación: 23270073</span>
         <span>Uso exclusivo institucional</span>
       </div>
-      <div class="qr-placeholder">
-        Aquí va el QR real
-      </div>
+
+      <!-- Aquí irá el QR cuando me des la URL -->
+      <img src="QR.png" alt="QR" class="qr-img">
     </div>
   </div>
+
 </body>
 </html>
+
